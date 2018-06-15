@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Metron Automations</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body class="hold-transition skin-yellow-light sidebar-mini">
+    <div class="wrapper">
+
+        @{
+        Html.RenderPartial("_Header");
+        }
+
+        @{
+        Html.RenderPartial("_Sidebar");
+        }
+
+        @RenderBody()
+
+        @{
+        Html.RenderPartial("_Footer");
+        }
+
+        @{
+        Html.RenderPartial("_ControlSidebar");
+        }
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
