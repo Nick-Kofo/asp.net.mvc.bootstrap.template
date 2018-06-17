@@ -20,13 +20,17 @@ namespace Template
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js",
-                      "~/Scripts/adminlte.js"));
+                      "~/Scripts/bootstrap.min.js",
+                      "~/Scripts/respond.min.js",
+                      "~/Scripts/datatables.min.js",
+                      "~/Scripts/adminlte.js",
+                      "~/Scripts/app.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/bootstrap.min.css.map",
                       "~/Content/font-awesome.min.css",
+                      "~/Content/datatables.min.css",
                       "~/Content/skin-yellow-light.css",
                       "~/Content/adminlte.css"));
         }
