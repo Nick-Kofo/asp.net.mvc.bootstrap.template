@@ -1,0 +1,11 @@
+﻿li.paginate_button > a {
+    background-color: #F39C12 !important;
+}
+
+li.paginate_button:hover {
+    background-color: #F39C12 !important;
+}
+
+li.paginate_button.current > a {
+    background-color: #F39C12 !important;
+}

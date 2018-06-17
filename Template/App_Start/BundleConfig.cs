@@ -20,7 +20,9 @@ namespace Template
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.min.js",
+                      "~/Scripts/bootstrap.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/plugins").Include(
                       "~/Scripts/respond.min.js",
                       "~/Scripts/datatables.min.js",
                       "~/Scripts/dataTables.buttons.min.js",
@@ -31,7 +33,9 @@ namespace Template
                       "~/Scripts/jszip.min.js",
                       "~/Scripts/pdfmake.min.js",
                       "~/Scripts/vfs_fonts.js",
-                      "~/Scripts/adminlte.js",
+                      "~/Scripts/adminlte.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
                       "~/Scripts/app.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -41,7 +45,8 @@ namespace Template
                       "~/Content/datatables.min.css",
                       "~/Content/buttons.dataTables.min.css",
                       "~/Content/skin-yellow-light.css",
-                      "~/Content/adminlte.css"));
+                      "~/Content/adminlte.css",
+                      "~/Content/app.css"));
         }
     }
 }

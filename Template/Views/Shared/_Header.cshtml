@@ -19,7 +19,7 @@
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 @if (Request.IsAuthenticated)
-                 {
+                {
                     <!-- User Account Menu -->
                     <li class="dropdown user user-menu">
                         <!-- Menu Toggle Button -->
@@ -33,7 +33,13 @@
                             </li>
                         </ul>
                     </li>
-                 }
+                }
+                else
+                {
+                    <li>
+                        <a href="@Url.Action("SignIn", "Account")" class="btn btn-link">Σύνδεση</a>
+                    </li>
+                }
             </ul>
         </div>
     </nav>
