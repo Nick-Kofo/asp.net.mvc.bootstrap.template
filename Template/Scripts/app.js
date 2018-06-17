@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
-    console.log('app.js');
-    $('#example').DataTable();
+    $('#home-table').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'csv', 'excel', 'pdf', 'print'
+        ]
+    });
 });

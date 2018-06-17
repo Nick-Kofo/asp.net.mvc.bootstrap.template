@@ -23,6 +23,14 @@ namespace Template
                       "~/Scripts/bootstrap.min.js",
                       "~/Scripts/respond.min.js",
                       "~/Scripts/datatables.min.js",
+                      "~/Scripts/dataTables.buttons.min.js",
+                      "~/Scripts/buttons.print.min.js",
+                      "~/Scripts/buttons.html5.min.js",
+                      "~/Scripts/buttons.flash.min.js",
+                      "~/Scripts/buttons.bootstrap.min.js",
+                      "~/Scripts/jszip.min.js",
+                      "~/Scripts/pdfmake.min.js",
+                      "~/Scripts/vfs_fonts.js",
                       "~/Scripts/adminlte.js",
                       "~/Scripts/app.js"));
 
@@ -31,6 +39,7 @@ namespace Template
                       "~/Content/bootstrap.min.css.map",
                       "~/Content/font-awesome.min.css",
                       "~/Content/datatables.min.css",
+                      "~/Content/buttons.dataTables.min.css",
                       "~/Content/skin-yellow-light.css",
                       "~/Content/adminlte.css"));
         }
